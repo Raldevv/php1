@@ -3,22 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>My Profile</title>
+
     <style>
         * {
-            font-family: Comic Neue;
+            font-family: "Comic Neue", sans-serif;
+            box-sizing: border-box;
         }
 
-        .header-title, .header-subtitle {
+        body {
+            min-height: 100vh;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: white;
+        }
+
+        .header-title,
+        .header-subtitle {
             text-align: center;
+            background-color: gray;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .box-1 {
+            background-color: aqua;
+            width: 50%;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .content-info {
+            text-align: center;
+            margin: 0;
         }
     </style>
 </head>
+
 <body>
-    <h1 class = "header-title">Hello, Visitor!</h1>
-    <h2 class = "header-subtitle">Welcome to my Profile!</h2>
+
+    <h1 class="header-title">Hello, Visitor!</h1>
+
+    <h2 class="header-subtitle">
+        Welcome to my Profile!
+    </h2>
+
+    <div class="box-1">
+        <p class="content-info">
+            <span>Name:</span> Rald Vincent C. Sillar
+        </p>
+    </div>
+    <div class="box-2">
+        <p class="content-info">
+            <span>Age:</span> 20
+        </p>
+    </div>
+    <div class="box-3">
+        <p class="content-info">
+            <span>Address:</span> Lapu-Lapu City
+        </p>
+    </div>
+    <div class="box-4">
+        <p class="content-info">
+            <span>Course:</span> Bachelor of Science in Information Technology
+        </p>
+    </div>
+
 </body>
 </html>
